@@ -1,7 +1,7 @@
-package com.hackathon.hackathon.api;
+package hackathon.api;
 
-import com.hackathon.hackathon.flows.ExampleFlow;
-import com.hackathon.hackathon.states.IOUState;
+import hackathon.flows.ExampleFlow;
+import hackathon.states.IOUState;
 import net.corda.core.contracts.StateAndRef;
 import net.corda.core.identity.CordaX500Name;
 import net.corda.core.identity.Party;
@@ -39,6 +39,10 @@ public class CordaIntegrationController {
         // Filter by state type: IOU.
         return proxy.vaultQuery(IOUState.class).getStates();
     }
+
+    //alıcı firma alıcı id bu dosya şifrelenerek blokceinde tutulcak. alıcı firma ve alıcı id ile alakalı blokchainde bir dosya varsa onu gelen dosyalarda görebilcek.
+    //inaktif bir dosya ise invalid olduğu yazar yine görüntüler.
+    //
 
     @PostMapping(value = "create-iou" , produces =  TEXT_PLAIN_VALUE , headers =  "Content-Type=application/x-www-form-urlencoded" )
     public ResponseEntity<String> issueIOU(HttpServletRequest request) throws IllegalArgumentException {

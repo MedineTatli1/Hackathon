@@ -1,8 +1,8 @@
-package com.hackathon.hackathon.flows;
+package hackathon.flows;
 
 import co.paralleluniverse.fibers.Suspendable;
-import com.hackathon.hackathon.contracts.IOUContract;
-import com.hackathon.hackathon.states.IOUState;
+import hackathon.contracts.IOUContract;
+import hackathon.states.IOUState;
 import net.corda.core.contracts.Command;
 import net.corda.core.contracts.ContractState;
 import net.corda.core.contracts.UniqueIdentifier;

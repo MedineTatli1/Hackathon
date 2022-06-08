@@ -1,4 +1,4 @@
-package com.hackathon.hackathon.api;
+package hackathon.api;
 
 import lombok.Getter;
 import lombok.Setter;

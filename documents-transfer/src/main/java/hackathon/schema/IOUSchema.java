@@ -1,4 +1,4 @@
-package com.hackathon.hackathon.schema;
+package hackathon.schema;
 
 /**
  * The family of schemas for IOUState.

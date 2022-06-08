@@ -1,4 +1,4 @@
-package com.hackathon.hackathon.schema;
+package hackathon.schema;
 
 import net.corda.core.schemas.MappedSchema;
 import net.corda.core.schemas.PersistentState;

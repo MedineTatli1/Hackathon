@@ -1,1 +1,3 @@
 rootProject.name = 'hackathon'
+include 'documents-transfer'
+

@@ -1,7 +1,7 @@
-package com.hackathon.hackathon.states;
+package hackathon.states;
 
-import com.hackathon.hackathon.contracts.IOUContract;
-import com.hackathon.hackathon.schema.IOUSchemaV1;
+import hackathon.contracts.IOUContract;
+import hackathon.schema.IOUSchemaV1;
 import net.corda.core.contracts.BelongsToContract;
 import net.corda.core.contracts.LinearState;
 import net.corda.core.contracts.UniqueIdentifier;

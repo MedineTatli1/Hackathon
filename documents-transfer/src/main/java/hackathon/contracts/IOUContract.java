@@ -1,6 +1,6 @@
-package com.hackathon.hackathon.contracts;
+package hackathon.contracts;
 
-import com.hackathon.hackathon.states.IOUState;
+import hackathon.states.IOUState;
 import net.corda.core.contracts.CommandData;
 import net.corda.core.contracts.CommandWithParties;
 import net.corda.core.contracts.Contract;

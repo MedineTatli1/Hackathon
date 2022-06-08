@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  documents-transfer:
+    image: documents-transfer:latest
+    container_name: documents-transfer
+    build:
+      context: ./documents-transfer
+      args:
+        - APP_NAME=documents-transfer
+        - APP_VERSION=0.0.1
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    expose:
+      - 8081
+    ports:
+      - 8081:8081
