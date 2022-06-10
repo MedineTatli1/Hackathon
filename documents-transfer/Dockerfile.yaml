@@ -1,6 +1,0 @@
-FROM openjdk:8-alpine
-RUN apk add tzdata curl unzip && ln -sf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
-ARG APPLICATION
-ADD target/$APPLICATION*.jar /service/service.jar
-EXPOSE 8080
-ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom $JAVA_OPTS  -jar /service/service.jar
